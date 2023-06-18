@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>婚礼相册</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="./assets/css/sanitize.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body oncontextmenu="return false;">
+    <audio id="bgmPlayer" src="./assets/bgm/bgm1.mp3" loop></audio>
+
+    <div class="hero">
+        <strong></strong>
+        <div class="hero-particles" id="particles-js"></div>
+        <!-- <video autoplay loop muted preload>
+            <source src="assets/videos/hero.mp4" type="video/mp4">
+        </video> -->
+        <div class="slideshow">
+            <img class="slide slide1" src="./assets/images/heng/B1.JPG" alt="heng img" />
+            <img class="slide slide2" src="./assets/images/heng/A2.JPG" alt="heng img" />
+            <img class="slide slide2" src="./assets/images/heng/A3.JPG" alt="heng img" />
+            <img class="slide slide3" src="./assets/images/heng/A4.JPG" alt="heng img" />
+            <img class="slide" src="./assets/images/heng/A1.JPG" alt="heng img" />
+            <img class="slide" src="./assets/images/heng/B3.JPG" alt="heng img" />
+            <img class="slide slide4" src="./assets/images/heng/B4.JPG" alt="heng img" />
+            <img class="slide" src="./assets/images/heng/C1.JPG" alt="heng img" />
+            <img class="slide slide1" src="./assets/images/heng/C2.JPG" alt="heng img" />
+            <img class="slide" src="./assets/images/heng/C4.JPG" alt="heng img" />
+            <img class="slide slide1" src="./assets/images/heng/C5.JPG" alt="heng img" />
+            <img class="slide slide1" src="./assets/images/heng/C6.JPG" alt="heng img" />
+            <img class="slide" src="./assets/images/heng/E1.JPG" alt="heng img" />
+            <img class="slide" src="./assets/images/heng/E2.JPG" alt="heng img" />
+            <img class="slide" src="./assets/images/heng/F1.JPG" alt="heng img" />
+            <img class="slide slide4" src="./assets/images/heng/F2.JPG" alt="heng img" />
+        </div>
+
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+            <span class="dot" onclick="currentSlide(11)"></span>
+            <span class="dot" onclick="currentSlide(12)"></span>
+            <span class="dot" onclick="currentSlide(13)"></span>
+            <span class="dot" onclick="currentSlide(14)"></span>
+            <span class="dot" onclick="currentSlide(15)"></span>
+        </div>
+    </div>
+
+    <header class="header">
+        <h1 class="header-logo">
+            <span class="card-label">❤</span>
+        </h1>
+        <nav class="header-nav">
+            <ul class="header-navlist">
+                <li class="header-navitem">
+                    <button id="nextButton" class="nextButton">▶</button>
+                </li>
+                <li class="header-navitem">
+                    <button id="stopButton" class="stopButton">■</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <h1 class="section-headline"><font class="fontStyle">囍</font>永结同心，百年好合<font class="fontStyle">囍</font></h1>
+        
+        <ul class="grid grid-col-3">
+            <li class="grid-item">
+                <article class="card">
+                    <!-- <span class="card-label">❤</span> -->
+                    <img class="card-image1" src="./assets/images/shu/01.JPG" alt="thumbnail">
+                    <img class="card-image1" src="./assets/images/shu/03.JPG" alt="thumbnail">
+                    <img class="card-image1" src="./assets/images/shu/11.JPG" alt="thumbnail">
+                    <img class="card-image1" src="./assets/images/shu/12.JPG" alt="thumbnail">
+                    <img class="card-image1" src="./assets/images/shu/13.JPG" alt="thumbnail">
+                    <img class="card-image1" src="./assets/images/shu/14.JPG" alt="thumbnail">
+                    <img class="card-image1" src="./assets/images/shu/15.JPG" alt="thumbnail">
+                    <img class="card-image1" src="./assets/images/shu/16.JPG" alt="thumbnail">
+                    <img class="card-image1" src="./assets/images/shu/17.JPG" alt="thumbnail">
+                    <div class="card-info">
+                        <!-- <time class="card-time" datetime="2022-01-01">2022.01.01</time>
+                            <h1 class="card-headline">一屋两人三餐四季</h1> -->
+                            <p class="card-description"><font class="hosiStyle">★</font>山水一程，风雨一更，三生有幸，共度余生。</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="grid-item"> 
+                    <article class="card">
+                    <img class="card-image2" src="./assets/images/shu/21.JPG" alt="thumbnail">
+                    <img class="card-image2" src="./assets/images/shu/23.JPG" alt="thumbnail">
+                    <img class="card-image2" src="./assets/images/shu/24.JPG" alt="thumbnail">
+                    <img class="card-image2" src="./assets/images/shu/25.JPG" alt="thumbnail">
+                    <img class="card-image2" src="./assets/images/shu/31.JPG" alt="thumbnail">
+                    <img class="card-image2" src="./assets/images/shu/32.JPG" alt="thumbnail">
+                    <img class="card-image2" src="./assets/images/shu/33.JPG" alt="thumbnail">
+                    <img class="card-image2" src="./assets/images/shu/41.JPG" alt="thumbnail">
+                    <img class="card-image2" src="./assets/images/shu/42.JPG" alt="thumbnail">
+                    <div class="card-info">
+                        <p class="card-description"><font class="hosiStyle">★</font>不偏不倚，刚好是你，往后余生，有你足矣。</p>
+                    </div>
+                </article>
+            </li>
+            <li class="grid-item"> 
+                <article class="card">
+                    <img class="card-image3" src="./assets/images/shu/43.JPG" alt="thumbnail">
+                    <img class="card-image3" src="./assets/images/shu/44.JPG" alt="thumbnail">
+                    <img class="card-image3" src="./assets/images/shu/45.JPG" alt="thumbnail">
+                    <img class="card-image3" src="./assets/images/shu/46.JPG" alt="thumbnail">
+                    <img class="card-image3" src="./assets/images/shu/51.JPG" alt="thumbnail">
+                    <img class="card-image3" src="./assets/images/shu/52.JPG" alt="thumbnail">
+                    <img class="card-image3" src="./assets/images/shu/53.JPG" alt="thumbnail">
+                    <img class="card-image3" src="./assets/images/shu/54.JPG" alt="thumbnail">
+                    <img class="card-image3" src="./assets/images/shu/56.JPG" alt="thumbnail">
+                    <div class="card-info">
+                        <p class="card-description"><font class="hosiStyle">★</font>既许一人以偏爱，愿尽余生之慷慨。</p>
+                    </div>
+                </article>
+            </li>
+        </ul>
+
+        <div class="section-button">
+            <a href="#" class="button">
+                TOP
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <figure class="footer-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.098860927457!2d116.39458717571713!3d39.91680377152432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f052e94515d43d%3A0x674e2bd4dd3079f!2z57Sr56aB5Z-O!5e0!3m2!1sja!2sjp!4v1687074851260!5m2!1sja!2sjp"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <figcaption class="footer-mapinfo">
+                <div class="footer-maplogo">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 192.756 192.756"><g fill-rule="evenodd" clip-rule="evenodd"><path d="M0 0h192.756v192.756H0V0z"/><path d="M133.057 137.084l.066-.086c3.297-3.734 6.041-8.02 8.242-12.414 3.623 2.416 8.016 3.955 12.633 3.955 10.215 0 19.334-5.162 20.873-15.709h-17.906V98.217h32.957v43.943h-13.625v-7.908c-5.932 5.604-13.182 9.008-22.299 9.008-7.691 0-14.834-2.197-20.875-6.262-.328-.109-.658-.33-.988-.549-10.107-7.361-16.809-19.664-16.809-33.617 0-4.066.441-7.799 1.209-11.426l-16.26 51.195H84.457L65.67 83.716c.112 1.21.33 2.417.33 3.626H50.401c-.112-.55-.219-1.209-.441-1.867-.769-2.747-2.636-4.944-3.953-5.823-.441-.331-1.21-.768-2.197-1.209-1.21-.55-2.857-1.099-4.725-1.537-2.197 5.055-3.845 10.545-4.505 16.26.549.108 1.099.219 1.759.219 1.978.33 4.614.55 7.471.88 2.085.219 4.172.549 6.15.988 4.286.876 8.461 2.197 11.315 4.395 5.604 4.613 8.351 10.986 7.472 20.65-.661 6.924-5.055 13.516-9.557 17.029-1.648 1.1-4.617 2.307-7.583 3.297 1.759 2.527 8.021 6.701 12.084 8.9h54.163c4.834-2.639 10.984-7.584 14.279-11.428v.111c.33-.33.66-.66.988-1.102a.679.679 0 0 1-.064-.021zm-91.444-8.875c2.746 4.613 6.042 8.789 9.888 12.414-4.836 1.648-10.548 2.967-16.92 2.967-9.887 0-17.905-3.406-22.299-6.922-4.616-3.734-9.446-11.535-9.446-20.762H19.2c0 9.115 9.449 12.963 17.027 12.963 1.76 0 3.627-.33 5.386-.66zm-6.811-19.336c-.552-3.074-.661-6.041-.661-9.115 0-2.201.109-4.395.331-6.484-7.363-.879-13.844-3.296-13.844-7.909 0-5.712 6.591-8.789 12.084-9.008 1.979-.111 4.175.219 6.262.657a55.756 55.756 0 0 1 8.239-13.402c-3.623-.988-7.909-1.428-12.192-1.428-9.338 0-18.018 3.407-23.731 8.35-5.273 4.613-7.029 10.434-7.029 17.688 0 4.284 1.756 7.471 6.264 12.085 3.842 4.064 16.584 7.248 24.277 8.566zm55.807-65.64c16.205-.055 31.141 7.031 41.525 18.292 1.336 1.449 2.578 2.788 3.754 4.281 5.006-2.344 10.965-3.625 17.668-3.731 19.445.108 33.287 8.678 36.254 26.915h-16.588c-2.857-7.36-8.131-12.744-19.666-12.744-3.844 0-7.471 1.209-10.547 3.076-1.848-4.783-4.342-9.354-7.27-13.281a44.477 44.477 0 0 0-3.605 2.076c-6.15 3.954-10.656 9.669-13.291 16.479l6.918-22.521h-16.037l-17.358 55.917-1.978-5.932L74.9 62.075H58.86l4.284 13.292c-1.429-2.747-3.405-5.053-5.712-6.919-2.197-1.758-4.725-3.077-7.471-4.064-.769-.222-1.648-.552-2.525-.771.77-.988 1.648-1.978 2.525-2.966 10.216-10.66 24.444-17.358 40.648-17.414zm-46.799 67.29a37.478 37.478 0 0 0-5.715-1.209c-.768-.221-1.975-.33-3.185-.551 1.099 6.922 3.515 13.514 6.811 19.445.771-.107 1.429-.219 2.089-.33 1.317-.219 2.305-.439 2.966-.658 1.206-.33 2.308-1.098 3.185-2.307 1.867-2.086 2.857-5.055 2.419-7.252-.441-1.426-1.209-2.635-2.419-3.734-1.538-1.536-3.735-2.636-6.151-3.404zm88.325-16.7c-.879 2.855-1.318 5.935-1.318 9.009 0 3.186.439 6.152 1.318 8.898 1.76 5.273 5.055 9.777 9.449 12.744a57.16 57.16 0 0 0 5.602-24.717c0-7.142-1.318-14.064-3.955-20.546-5.165 3.185-9.01 8.461-11.096 14.612z" fill="#757fb5"/></g></svg>
+                    BugFix Inc. -->
+                </div>
+                <address class="footer-mapaddress">
+                    邮政编码: 100009<br>
+                    紫禁城, 中国 Beijing<br/>
+                    <a href="https://goo.gl/maps/zs7HcF7WxdK3hu227" target="_blank">Google Map</a>
+                </address>
+            </figcaption>
+        </figure>
+        <hr class="footer-line" />
+        <small class="footer-copy">Copyright ©Wu XiaoNan.</small>
+    </footer>
+
+
+    <script src="./assets/js/particles.min.js"></script>
+    <script src="./assets/js/home.js"></script>
+</body>
+</html>
