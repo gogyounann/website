@@ -1,6 +1,3 @@
-# website 岩渕
+# website
 
-Web サイト 岩渕
-Web サイト 岩渕
-Web サイト 岩渕
-Web サイト 岩渕
+Web サイト
