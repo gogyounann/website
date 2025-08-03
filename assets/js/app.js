@@ -10,6 +10,11 @@ form.addEventListener('submit', function(event) {
     event.preventDefault(); // 送信のデフォルト動作を止める
 
     form.reset(); // フォームをリセット
+    // 画面をトップへスクロール（スマホ含むすべてのデバイスで有効）
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
 
     dialog.showModal(); // モーダルを開く
 });

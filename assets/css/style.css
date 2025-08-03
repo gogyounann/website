@@ -450,6 +450,13 @@ footer
     font-size: x-large;
 }
 
+/* スマホサイズ（768px以下）の場合、navを非表示にする */
+@media screen and (max-width: 768px) {
+    .header-nav {
+        display: none;
+    }
+}
+
 /* ダイヤログ用 */
 dialog {
     border: none;
