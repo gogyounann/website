@@ -444,3 +444,58 @@ footer
         text-align: center;
     }
 }
+
+.header-nav.font-color a {
+    /* color: #fff; */
+    font-size: x-large;
+}
+
+/* ダイヤログ用 */
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 2em;
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    font-family: sans-serif;
+    background: #fff;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+dialog p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+#closeDialog {
+    padding: 0.6em 1.2em;
+    background: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#closeDialog:hover {
+    background: #1565c0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
